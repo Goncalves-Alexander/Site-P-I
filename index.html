@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/content.css">
     <link rel="stylesheet" href="css/body.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/popup.css">
+    <!--<script src="js/popupopt.js"></script>-->
+    <title>Making Together</title>
 </head>
 
 <body>
@@ -29,7 +31,7 @@
                 </div>
                 <div class="user-options">
                     <div class="buttons-options">
-                        <button>Entrar</button>
+                        <button id="btn">Entrar</button>
                         <button>Cadastrar</button>
                     </div>
                 </div>
@@ -82,31 +84,79 @@
                             </div>
                         </a>
                     </li>
+                    <li>
+                    </li>
                 </ul>
             </nav>
-            <div class="line-header"></div>
+            <hr class="line-header">
+            </hr>
         </div>
     </div>
     <div class="content">
         <div class="container">
             <div class="content-page">
-                <div class="share-content" aria-multiline="true" contenteditable="true" role="textbox" aria-label="Share your experience" aria-describedby="placeholder-share">
+                <div class="share-content" aria-multiline="true" contenteditable="true" role="textbox"
+                    aria-label="Share your experience" aria-describedby="placeholder-share">
                 </div>
             </div>
             <div class="post-content">
-                        
+
             </div>
             <div class="post-content">
-                        
+
             </div>
             <div class="post-content">
-                        
+
             </div>
             <div class="post-content">
-                        
+
             </div>
+        </div>
+    </div>
+    <div class="form-focus" id="myForm">
+        <div class="popup-form">
+            <span class="close">&times</span>
+            <form class="form-container">
+                <div>
+                    <h1>Entrar no Making Together</h1>
+                </div>
+                <div>
+                    <label for="e-mail">E-mail:
+                        <input type="email" name="email" id="" required>
+                    </label>
+                </div>
+                <div>
+                    <label for="password">Senha:
+                        <input type="password" name="password" id="" required>
+                    </label>
+                </div>
+                <div>
+                    <input type="submit" value="Entrar">
+                    <input type="submit" value="Cadastrar-se">
+                </div>
+            </form>
         </div>
     </div>
 </body>
 
 </html>
+
+<script>
+    var modal = document.getElementById("myForm");
+    var btn = document.getElementById("btn");
+    var span = document.getElementsByClassName("close")[0];
+ 
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
