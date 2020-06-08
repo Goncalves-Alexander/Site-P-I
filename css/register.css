@@ -1,0 +1,116 @@
+.register-form{
+    width: 100%;
+    height: 100%;
+}
+
+.image-change{
+    width: 100%;
+    position: fixed;
+    float: left;
+    height: 100%;
+}
+
+.container-image{
+    width: 50%;
+    height: 100%;
+    filter: brightness(75%);
+}
+
+.container{
+    top:50%;
+}
+
+.message-form{
+    position: absolute;
+    top:50%;
+    filter: brightness(125%);
+    right: 0%;
+    font-size: 15pt;
+    z-index: 1;
+    text-align: center;
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .message-form {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.5);  
+    }
+}
+
+.slide-text h1{
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    border: 0;
+}
+
+.form-register{
+    float: right;
+    margin-left: 50%;
+    position: absolute;
+    z-index: 1;
+    width: 50%;
+    height:100%;
+}
+
+.form-register .content-register{
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.full-name .name, .email-space .e-mail, .password-space .password{
+    display: inline-block;
+}
+
+.full-name .name input, .email-space .e-mail input, .password-space .password input{
+    width: 170%;
+    height: 25px;
+    border: none;
+    border-bottom: 0.1px solid #160c01;
+    border-radius: 5%;
+}
+
+.full-name .name:nth-child(2), .email-space .e-mail:nth-child(2), .password-space .password:nth-child(2){
+    margin-left: 155px;
+}
+
+.mkt1{
+    margin: 19px 0 19px 0;
+}
+
+.submit .form-buttons{
+    font-size: 16pt;
+    display: block;
+    border: none;
+    background-color: #95650d;
+    width: 98%;
+    height: 60px;
+    border-radius: 5%;
+}
+
+.submit .form-buttons:hover, .submit .form-buttons:focus{
+    cursor: pointer;
+    background-color: #e2c491;
+    color: black;
+}
+
+.submit .form-buttons:nth-child(2){
+    margin-top: 10px;
+}
+
+.chck #box{
+    margin-left: 25px;
+}
+
+.date select{
+    font-size: 16pt;
+    border-radius: 5%;
+}
+.date select:nth-child(2), .date select:nth-child(3){
+    margin-left: 5px;
+}
+
+* label{
+    font-size: 16pt;
+}

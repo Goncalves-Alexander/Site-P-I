@@ -10,3 +10,10 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color: #160c01;
 }
+
+.container{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+

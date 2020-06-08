@@ -40,12 +40,25 @@
     background-color: white;
 }
 
+.form-container input[type=email]:focus, input[type=password]:focus {
+    background-color: rgb(227,199,161);
+}
+
+
 .form-container input[type=submit]{
-    width: 50%;
+    width: 100%;
     height: 25px;
     font-size: 12pt;
-    margin-left: 15px;
     margin-top: 15pt;
+}
+
+.form-submit a{
+    font-size: 10pt;
+    margin-top: 7px;
+    text-decoration: underline;
+}
+.form-submit a:hover{
+    color: black;
 }
 
 .form-container input[type=submit]:hover{
@@ -65,3 +78,11 @@
     cursor: pointer;
 }
 
+.pwd-submit a{
+    font-size: 10pt;
+    
+    text-decoration: underline;
+}
+.pwd-submit a:hover{
+    color: black;
+}
